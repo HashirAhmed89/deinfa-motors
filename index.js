@@ -221,7 +221,7 @@ function showCart() {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
     if (cartItems.length === 0) {
-        emptyMsg.textContent = "Your cart is empty.";
+        emptyMsg.textContent = "You don't have any bookings right now .";
         return;
     }
 
