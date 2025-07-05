@@ -200,7 +200,7 @@ function showCarsHome() {
             );
 
             if (alreadyInCart) {
-                alert("This car is already in your cart.");
+                alert("This car is already Booked");
                 return;
             }
 
