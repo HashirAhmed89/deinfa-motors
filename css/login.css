@@ -112,25 +112,51 @@ input[type="password"] {
 }
 
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    width: 90%;
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 20px 10px;
   }
 
-  .right, .left {
+  .container {
     width: 100%;
+    margin-top: 20px;
+    box-shadow: none;
+    border-radius: 8px;
+    border: 1px solid #D20707;
   }
 
   .left {
-    padding: 30px 20px;
+    padding: 25px 15px;
   }
 
   .left h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .left h1 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btns button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .right img {
+    height: 200px;
+    object-fit: cover;
   }
 }
+

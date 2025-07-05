@@ -119,6 +119,68 @@ color: #D20707;
 #submitOwner:hover {
   background-color: #a80505;
 }
+/*  tablets and smaller laptops */
+@media (max-width: 1024px) {
+  #box {
+    width: 50%;
+    height: auto;
+    transform: translate(0, 0);
+    padding: 20px;
+  }
+
+  #box input[type="text"],
+  #box input[type="password"] {
+    width: 90%;
+  }
+
+  .owner button,
+  .loginUser button,
+  #submitOwner {
+    width: 60%;
+    font-size: 15px;
+  }
+}
+
+/*  mobile  */
+@media (max-width: 600px) {
+  html, body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #main {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  #box {
+    width: 90%;
+    height: auto;
+    transform: none;
+    box-shadow: none;
+    padding: 20px 10px;
+  }
+
+  #box h2 {
+    font-size: 30px;
+  }
+
+  #box input[type="text"],
+  #box input[type="password"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .owner button,
+  .loginUser button,
+  #submitOwner {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
 
 
 
